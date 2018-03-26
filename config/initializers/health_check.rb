@@ -49,12 +49,12 @@ HealthCheck.setup do |config|
   # cache-control is public when max_age > 1 and basic_auth_username is not set
   # You can force private without authentication for longer max_age by
   # setting basic_auth_username but not basic_auth_password
-  config.max_age = 1
+  #config.max_age = 1
 
   # Protect health endpoints with basic auth
   # These default to nil and the endpoint is not protected
-  config.basic_auth_username = 'my_username'
-  config.basic_auth_password = 'my_password'
+  #config.basic_auth_username = 'my_username'
+  #config.basic_auth_password = 'my_password'
 
   # Whitelist requesting IPs
   # Defaults to blank and allows any IP
@@ -64,7 +64,7 @@ HealthCheck.setup do |config|
   #config.http_status_for_ip_whitelist_error = 403
 
   # When redis url is non-standard
-  config.redis_url = 'redis_url'
+  config.redis_url = 'tcp://172.31.56.180 :6379'
 
   # Disable the error message to prevent /health_check from leaking
   # sensitive information
