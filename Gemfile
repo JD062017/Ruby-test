@@ -30,7 +30,7 @@ platform :ruby do
   gem 'minitest'
   gem 'psych'
   gem 'racc'
-  gem "health_check"
+  gem 'health_check'
 end
 
 platforms :jruby do
